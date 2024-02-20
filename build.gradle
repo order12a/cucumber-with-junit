@@ -14,16 +14,16 @@ java {
 }
 
 dependencies {
+    implementation "org.aeonbits.owner:owner:${owner_version}"
+    implementation "io.rest-assured:rest-assured:${rest_assured_version}"
+
     testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
-
     testImplementation "io.cucumber:cucumber-java:${cucumberVersion}"
-
     testImplementation "io.cucumber:cucumber-junit:${cucumberVersion}"
     testImplementation "org.junit.vintage:junit-vintage-engine:${junitVersion}"
 
-    testImplementation 'org.json:json:20160810'
-    testImplementation 'io.rest-assured:rest-assured:4.5.0'
+    testImplementation "io.rest-assured:rest-assured:${rest_assured_version}"
 }
 
 test {
